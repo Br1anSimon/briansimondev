@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://briansimon.dev/sitemap.xml

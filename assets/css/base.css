@@ -1,0 +1,121 @@
+/* Reset, element defaults, typography, shared utilities. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--f-body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-image:
+    radial-gradient(60rem 40rem at 85% -10%, rgba(242, 165, 65, 0.1), transparent 60%),
+    radial-gradient(50rem 40rem at -10% 60%, rgba(143, 179, 192, 0.06), transparent 60%);
+  background-attachment: fixed;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+}
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+::selection {
+  background: var(--amber);
+  color: var(--on-amber);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  z-index: 100;
+  background: var(--amber);
+  color: var(--on-amber);
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.skip:focus {
+  left: 16px;
+}
+
+.wrap {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.mono {
+  font-family: var(--f-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.02em;
+}
+.eyebrow {
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--amber);
+  margin: 0 0 1rem;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--f-display);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-wrap: balance;
+}
+h2 {
+  font-size: var(--step-3);
+}
+h3 {
+  font-size: var(--step-2);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+p {
+  margin: 0;
+  max-width: 62ch;
+}
+.lede {
+  color: var(--muted);
+  font-size: var(--step-1);
+  line-height: 1.5;
+}

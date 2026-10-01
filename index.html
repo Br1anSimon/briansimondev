@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Brian Simon · Websites for local businesses</title>
+  <meta name="description" content="Brian Simon designs, builds, and maintains websites for restaurants, bakeries, and local businesses. Based in Pittsburgh, PA.">
+  <link rel="canonical" href="https://briansimon.dev/">
+  <meta name="theme-color" content="#0E0D0C">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://briansimon.dev/">
+  <meta property="og:title" content="Brian Simon · Websites for local businesses">
+  <meta property="og:description" content="Design, development, and ongoing care for restaurants, bakeries, and shops.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
+  <link rel="modulepreload" href="assets/js/main.js">
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="stage" aria-hidden="true"></canvas>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Brian Simon, home">brianSimon<b>();</b></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a class="hide-sm" href="#services">Services</a>
+      <a class="hide-sm" href="#process">Process</a>
+      <a class="hide-sm" href="#about">About</a>
+      <a class="btn btn--solid" href="#contact">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap hero" id="top" aria-labelledby="hero-title">
+    <div>
+      <p class="eyebrow">Web design &amp; development · Pittsburgh, PA</p>
+      <h1 id="hero-title">Websites that make local businesses look <em>as good as they are.</em></h1>
+      <p class="lede">I'm Brian Simon. I design, build, and look after websites for restaurants, bakeries, and shops. You get one person who handles all of it, from the first sketch to the Friday-night menu change.</p>
+      <div class="ctas">
+        <a class="btn btn--solid" href="#work">See recent work</a>
+        <a class="btn btn--ghost" href="#contact">Start a project</a>
+      </div>
+      <ul class="facts mono">
+        <li>Client sites since 2020</li>
+        <li>Design · Build · Support</li>
+      </ul>
+    </div>
+    <div class="hero-stage" id="hero-anchor" aria-hidden="true"></div>
+  </section>
+
+  <section class="wrap section" id="work" aria-labelledby="work-title">
+    <div class="section-head">
+      <p class="eyebrow">Selected work</p>
+      <h2 id="work-title">Two businesses with very different personalities.</h2>
+      <p class="lede">A bakery that ships across the country and a steakhouse inside an old power plant. Each site is built around how its customers actually buy.</p>
+    </div>
+
+    <!-- EDIT: double-check the scope/highlights lines below match what you built. -->
+    <article class="case" aria-labelledby="c1">
+      <div>
+        <div class="case-meta mono"><span class="idx">Bakery</span><span class="where">Orlando, FL · ships nationwide</span></div>
+        <h3 id="c1">The Icing House</h3>
+        <p>A Peruvian and American dessert shop from pastry chef Eliana Simon. The site needed to feel as handmade as the alfajores while handling two ways to buy: order ahead for pickup at the Orlando Vineland Premium Outlets kiosk, or ship treats anywhere in the country.</p>
+        <dl>
+          <dt>Scope</dt><dd>Design, development, product catalog</dd>
+          <dt>Built for</dt><dd>Kiosk pickup orders, nationwide shipping, press coverage</dd>
+        </dl>
+        <a class="visit" href="https://theicinghouse.com" target="_blank" rel="noopener">Visit theicinghouse.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <a class="case-visual" id="anchor-0" href="https://theicinghouse.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"></a>
+    </article>
+
+    <article class="case case--flip" aria-labelledby="c2">
+      <div>
+        <div class="case-meta mono"><span class="idx">Restaurant</span><span class="where">White Haven, PA</span></div>
+        <h3 id="c2">PowerHouse Eatery</h3>
+        <p>Upscale-casual dining inside a restored early-1900s power plant, serving steaks, seafood, and seasonal plates since 1989. I've built and supported their website since 2020, from seasonal menu swaps to holiday hours.</p>
+        <dl>
+          <dt>Scope</dt><dd>Design, development, ongoing support</dd>
+          <dt>Built for</dt><dd>Menus, reservations, a building with a story</dd>
+        </dl>
+        <a class="visit" href="https://www.powerhouseeatery.com" target="_blank" rel="noopener">Visit powerhouseeatery.com <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <a class="case-visual" id="anchor-1" href="https://www.powerhouseeatery.com" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"></a>
+    </article>
+
+    <article class="case" aria-labelledby="c3">
+      <div>
+        <div class="case-meta mono"><span class="idx">Open slot</span><span class="where">Pittsburgh &amp; anywhere</span></div>
+        <h3 id="c3">Your business</h3>
+        <p>This frame is empty on purpose. If your shop, restaurant, or studio still runs on a Facebook page and a phone number, I'd like to build what goes here.</p>
+        <a class="visit" href="#contact">Claim this spot <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </div>
+      <a class="case-visual" id="anchor-2" href="#contact" tabindex="-1" aria-hidden="true"></a>
+    </article>
+  </section>
+
+  <section class="wrap section" id="services" aria-labelledby="svc-title">
+    <div class="section-head">
+      <p class="eyebrow">Services</p>
+      <h2 id="svc-title">What I can do for your business.</h2>
+    </div>
+    <div class="services">
+      <div class="svc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01"/></svg>
+        <h3>New websites</h3>
+        <p>Designed from scratch around your business. Built mobile-first, because most of your customers will find you on a phone.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
+        <h3>Redesigns</h3>
+        <p>Keep the name and the domain people know. Replace the site that hasn't been touched since it was built.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+        <h3>Menus, catalogs &amp; ordering</h3>
+        <p>Online menus you can keep current, product catalogs, and clean links into the ordering, booking, or shipping tools you already use.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+        <h3>Care &amp; updates</h3>
+        <p>Hosting, fixes, and edits handled by text or email. New hours, a holiday special, a price change: send it over and it's done.</p>
+      </div>
+    </div>
+    <div class="included"><strong class="mono">Every site includes</strong><span>Custom design</span><span>Phone-first layout</span><span>Google Maps &amp; search basics</span><span>Fast load times</span><span>Domain &amp; launch help</span></div>
+  </section>
+
+  <section class="wrap section" id="process" aria-labelledby="proc-title">
+    <div class="section-head">
+      <p class="eyebrow">Process</p>
+      <h2 id="proc-title">From first conversation to launch.</h2>
+    </div>
+    <ol class="steps">
+      <li class="step"><h3>Talk</h3><p>We sit down and go over what your customers ask about most: hours, the menu, how to order, where to park.</p></li>
+      <li class="step"><h3>Design</h3><p>You see a real design of your homepage before any code gets written, and we adjust it together.</p></li>
+      <li class="step"><h3>Build</h3><p>I build the site and send you a preview link. Check it on your own phone and tell me what bugs you.</p></li>
+      <li class="step"><h3>Launch &amp; care</h3><p>I handle the domain, hosting, and launch, then stay on for updates as your business changes.</p></li>
+    </ol>
+  </section>
+
+  <section class="wrap section" id="about" aria-labelledby="about-title">
+    <div class="about">
+      <div>
+        <p class="eyebrow" id="about-title">About</p>
+        <blockquote>It started at a restaurant where I <span>worked the floor</span> and ended up running the website too.</blockquote>
+      </div>
+      <div class="body">
+        <p>That was PowerHouse Eatery in 2020. Serving tables taught me what owners actually need from a website: the right hours, a menu that's current, and a phone number that's easy to tap. Everything else is decoration.</p>
+        <p>Today I'm studying computer science at the University of Pittsburgh and taking on web projects for local businesses. The engineering coursework keeps the code solid. The clients keep it practical.</p>
+        <dl>
+          <dt>Based in</dt><dd>Pittsburgh, PA</dd>
+          <dt>Studying</dt><dd>B.S. Computer Science, University of Pittsburgh</dd>
+          <dt>Toolbox</dt><dd>HTML, CSS, JavaScript, three.js</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section contact" id="contact" aria-labelledby="contact-title">
+    <p class="eyebrow">Contact</p>
+    <h2 id="contact-title">Let's get your business online.</h2>
+    <p class="lede">Tell me about your business and what you need. A rough idea is plenty to start with.</p>
+    <!-- EDIT: swap in a dedicated business address if you have one. -->
+    <div class="mail">
+      <span class="addr" id="email">bsimon2005@gmail.com</span>
+      <button class="btn btn--solid" type="button" id="copy-email">Copy email</button>
+      <a class="btn btn--ghost" href="mailto:bsimon2005@gmail.com?subject=Website%20project">Open in mail app</a>
+    </div>
+    <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+    <div class="elsewhere">
+      <a href="https://github.com/Br1anSimon" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© <span id="yr">2026</span> Brian Simon</span><span class="mono">brianSimon(); · built with three.js</span></div>
+</footer>
+</body>
+</html>

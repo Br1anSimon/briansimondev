@@ -1,0 +1,29 @@
+/* Design tokens: color, type, spacing. Edit here to re-theme the site. */
+/* Layout: one fixed WebGL stage behind a two-column editorial page. Each project's
+   3D browser frame is anchored to an empty grid cell, so it scrolls with the page. */
+:root {
+  --ink: #0e0d0c; /* page ground, warm near-black */
+  --panel: #171513; /* raised surfaces */
+  --line: #2b2723; /* hairlines */
+  --paper: #ede6da; /* primary text */
+  --muted: #a69d90; /* secondary text */
+  --amber: #f2a541; /* sodium-lamp accent */
+  --steel: #8fb3c0; /* cool secondary, used sparingly */
+  --on-amber: #1a1206;
+
+  --f-display: 'Bricolage Grotesque', 'Arial Narrow', system-ui, sans-serif;
+  --f-body: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  --step--1: clamp(0.82rem, 0.78rem + 0.15vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+  --step-1: clamp(1.2rem, 1.1rem + 0.5vw, 1.45rem);
+  --step-2: clamp(1.6rem, 1.3rem + 1.2vw, 2.3rem);
+  --step-3: clamp(2.2rem, 1.6rem + 2.6vw, 3.8rem);
+  --step-4: clamp(2.7rem, 1.8rem + 4.2vw, 5.6rem);
+
+  --gutter: clamp(16px, 4vw, 44px);
+  --maxw: 1240px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  color-scheme: dark;
+}
