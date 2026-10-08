@@ -32,3 +32,17 @@ export function initYear() {
   const el = document.getElementById('yr');
   if (el) el.textContent = new Date().getFullYear();
 }
+
+/** Scale each 1440px-wide concept-site iframe down to fit its card. */
+export function initDemoPreviews() {
+  const screens = document.querySelectorAll('.demo-screen');
+  if (!screens.length) return;
+  const fit = (el) => el.style.setProperty('--demo-scale', el.clientWidth / 1440);
+  if ('ResizeObserver' in window) {
+    const ro = new ResizeObserver((entries) => entries.forEach((e) => fit(e.target)));
+    screens.forEach((el) => ro.observe(el));
+  } else {
+    screens.forEach(fit);
+    addEventListener('resize', () => screens.forEach(fit));
+  }
+}

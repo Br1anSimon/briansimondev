@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lavi's Market | Oakland, Pittsburgh</title>
+<meta name="description" content="Lavi's Market on Forbes Ave in Oakland, Pittsburgh. Beer, wine, hot individual pizzas, subs, nicotine, hemp, snacks and more. Open until 4 AM on weekends.">
+<meta name="theme-color" content="#0b0716">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://lh3.googleusercontent.com">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOQseeygxKrrD7XV6COlioHIvMrqFuA1F0e5cAfoXIMGl2YP0lgEC5jf4Vxeq3dvqaTge-w13GgGwSDumdfT7OZRAvDISLC_df2xVlhkBy7BeCSIN1-ejpgb8U4r25iU8fTaFCCis0HBWg=w800-k-no">
+<style>
+:root{
+  --bg:#0b0716; --bg2:#140d26; --card:#1b1233; --line:#2e2150;
+  --text:#fbf8ff; --muted:#b9add6;
+  --lime:#d6ff2e; --pink:#ff2e8a; --cyan:#22e4ff; --orange:#ff8a1f; --red:#ff3b3b; --violet:#8b5cff; --yellow:#ffd60a;
+  --radius:22px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:clip;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.display{font-family:Bungee,Impact,sans-serif;font-weight:400;letter-spacing:.5px;line-height:1.02}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:800;font-size:15px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn-lime{background:var(--lime);color:#120a22;box-shadow:0 0 0 0 var(--lime),0 10px 30px -8px rgba(214,255,46,.6)}
+.btn-pink{background:var(--pink);color:#fff;box-shadow:0 10px 30px -8px rgba(255,46,138,.6)}
+.btn-ghost{border:2px solid var(--line);color:var(--text);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:var(--cyan)}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(11,7,22,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
+.logo{display:flex;align-items:baseline;gap:6px;font-family:Bungee,sans-serif;font-size:22px}
+.logo .l1{color:var(--lime);text-shadow:0 0 12px rgba(214,255,46,.75)}
+.logo .l2{color:var(--yellow);text-shadow:0 0 12px rgba(255,214,10,.7)}
+.navlinks{display:flex;gap:26px;font-weight:600;font-size:15px;color:var(--muted)}
+.navlinks a:hover{color:var(--lime)}
+.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;padding:7px 12px;border-radius:999px;background:rgba(214,255,46,.12);color:var(--lime);border:1px solid rgba(214,255,46,.35)}
+.status i{width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 10px currentColor;animation:pulse 1.6s infinite}
+.status.closed{background:rgba(255,59,59,.12);color:#ff7a7a;border-color:rgba(255,59,59,.35)}
+@keyframes pulse{50%{opacity:.35}}
+.nav-right{display:flex;align-items:center;gap:12px}
+.nav-right .btn{padding:10px 16px;font-size:14px}
+
+/* HERO */
+.hero{position:relative;padding:72px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20%;background:
+  radial-gradient(40% 40% at 15% 20%,rgba(255,46,138,.35),transparent 70%),
+  radial-gradient(35% 35% at 85% 15%,rgba(34,228,255,.28),transparent 70%),
+  radial-gradient(45% 45% at 70% 90%,rgba(139,92,255,.35),transparent 70%),
+  radial-gradient(30% 30% at 30% 95%,rgba(214,255,46,.18),transparent 70%);
+  filter:blur(10px);z-index:-1}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font-weight:800;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:var(--cyan);margin-bottom:18px}
+.hero h1{font-size:clamp(44px,7.2vw,92px)}
+.hero h1 .g{background:linear-gradient(90deg,var(--lime),var(--yellow) 40%,var(--orange) 70%,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:560px;margin:22px 0 30px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-stats{display:flex;gap:28px;margin-top:38px;flex-wrap:wrap}
+.hero-stats div{font-size:13px;color:var(--muted);font-weight:600}
+.hero-stats b{display:block;font-family:Bungee,sans-serif;font-size:28px;color:var(--text);font-weight:400}
+.stars{color:var(--yellow)}
+.photo-stack{position:relative;aspect-ratio:3/4;max-width:430px;justify-self:center;width:100%}
+.photo-stack .ph{position:absolute;inset:0;border-radius:28px;overflow:hidden;border:3px solid var(--lime);box-shadow:0 0 0 6px rgba(214,255,46,.12),0 0 60px rgba(214,255,46,.35),0 30px 80px -20px #000;transform:rotate(2.5deg);background:linear-gradient(160deg,#2a1650,#0b0716)}
+.photo-stack .ph img{width:100%;height:100%;object-fit:cover}
+.photo-stack .tag{position:absolute;z-index:2;font-family:Bungee,sans-serif;font-size:15px;padding:10px 16px;border-radius:14px;box-shadow:0 14px 30px -10px rgba(0,0,0,.7)}
+.tag.t1{left:-26px;top:12%;background:var(--pink);transform:rotate(-7deg)}
+.tag.t2{right:-20px;top:46%;background:var(--cyan);color:#06121a;transform:rotate(6deg)}
+.tag.t3{left:-12px;bottom:9%;background:var(--yellow);color:#1a1200;transform:rotate(-3deg)}
+
+/* MARQUEE */
+.marquee{background:var(--lime);color:#120a22;overflow:hidden;border-block:3px solid #120a22;transform:rotate(-1.2deg);margin:0 -10px}
+.marquee .track{display:flex;width:max-content;animation:slide 32s linear infinite}
+.marquee span{font-family:Bungee,sans-serif;font-size:22px;padding:14px 22px;white-space:nowrap}
+.marquee span::after{content:"\2605";margin-left:44px;color:var(--pink)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:42px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(34px,5vw,58px)}
+.sec-head p{color:var(--muted);max-width:440px}
+.kicker{font-weight:800;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;display:block}
+
+/* CATEGORY GRID */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.cat{position:relative;border-radius:var(--radius);padding:26px 22px 24px;min-height:210px;overflow:hidden;isolation:isolate;transition:transform .2s;color:#120a22}
+.cat:hover{transform:translateY(-6px) rotate(-.6deg)}
+.cat svg{width:46px;height:46px;margin-bottom:28px}
+.cat h3{font-family:Bungee,sans-serif;font-weight:400;font-size:21px;line-height:1.1;margin-bottom:8px}
+.cat p{font-size:14px;font-weight:600;opacity:.82}
+.cat::after{content:"";position:absolute;right:-40px;bottom:-40px;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,.22);z-index:-1}
+.cat .age{position:absolute;top:18px;right:18px;font-size:11px;font-weight:800;padding:4px 8px;border-radius:999px;background:rgba(0,0,0,.18)}
+.c-lime{background:var(--lime)} .c-pink{background:var(--pink);color:#fff} .c-cyan{background:var(--cyan)} .c-orange{background:var(--orange)}
+.c-violet{background:var(--violet);color:#fff} .c-yellow{background:var(--yellow)} .c-red{background:var(--red);color:#fff} .c-mint{background:#3dffb0}
+.c-blue{background:#3b82ff;color:#fff} .c-peach{background:#ffb4a2} .c-grape{background:#c084fc} .c-teal{background:#14b8a6;color:#fff}
+.span2{grid-column:span 2}
+
+/* KITCHEN */
+.kitchen{background:linear-gradient(180deg,var(--bg),#1a0a1e 30%,#250b17 70%,var(--bg))}
+.k-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.k-card{border-radius:30px;padding:40px;position:relative;overflow:hidden;min-height:440px;display:flex;flex-direction:column;justify-content:flex-end}
+.k-card h3{font-size:clamp(30px,4vw,46px);margin-bottom:12px}
+.k-card p{max-width:400px;font-weight:600}
+.k-pizza{background:radial-gradient(circle at 75% 30%,#ffb020 0,#ff6a00 35%,#d62828 75%);color:#fff}
+.k-sub{background:radial-gradient(circle at 75% 30%,#8cff5a 0,#20c45a 40%,#0b7a52 80%);color:#fff}
+.k-card .art{position:absolute;right:-30px;top:-30px;width:270px;height:270px;opacity:.95}
+.k-card h3,.k-card p,.k-card .chip{position:relative;z-index:1}
+.k-card .chip{display:inline-block;font-weight:800;font-size:12px;letter-spacing:1px;text-transform:uppercase;padding:6px 12px;border-radius:999px;background:rgba(0,0,0,.25);margin-bottom:14px;width:max-content}
+
+/* COLD CASE */
+.cold{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;justify-content:space-between;gap:14px;align-items:center;transition:border-color .15s}
+.item:hover{border-color:var(--cyan)}
+.item b{font-size:15px;display:block}
+.item small{color:var(--muted);font-size:12.5px}
+.item .pr{font-family:Bungee,sans-serif;color:var(--lime);font-size:17px;white-space:nowrap}
+.note{color:var(--muted);font-size:13px;margin-top:16px}
+
+/* LATE NIGHT */
+.late{background:var(--bg2);border-block:1px solid var(--line)}
+.late .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.big-clock{font-size:clamp(70px,13vw,160px);background:linear-gradient(180deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 30px rgba(34,228,255,.35))}
+.hours{list-style:none;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:10px}
+.hours li{display:flex;justify-content:space-between;padding:14px 18px;border-radius:14px;font-weight:600}
+.hours li span:last-child{color:var(--muted)}
+.hours li.today{background:linear-gradient(90deg,rgba(214,255,46,.18),rgba(214,255,46,.04));outline:1px solid rgba(214,255,46,.45)}
+.hours li.today span{color:var(--lime)}
+.hours li.late-night span:last-child{color:var(--pink)}
+
+/* REVIEWS */
+.rating-hero{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.rating-hero .num{font-family:Bungee,sans-serif;font-size:76px;line-height:1;color:var(--yellow);text-shadow:0 0 30px rgba(255,214,10,.4)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rev{border-radius:24px;padding:28px;background:var(--card);border:1px solid var(--line);position:relative}
+.rev:nth-child(1){border-top:5px solid var(--pink)} .rev:nth-child(2){border-top:5px solid var(--cyan)} .rev:nth-child(3){border-top:5px solid var(--lime)}
+.rev:nth-child(4){border-top:5px solid var(--orange)} .rev:nth-child(5){border-top:5px solid var(--violet)} .rev:nth-child(6){border-top:5px solid var(--yellow)}
+.rev q{display:block;font-size:19px;font-weight:600;line-height:1.45;margin:12px 0 18px;quotes:"\201C" "\201D"}
+.rev .who{color:var(--muted);font-size:14px;font-weight:600}
+.rev.wide{grid-column:span 2}
+
+/* GALLERY */
+.gallery{display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:16px;align-items:stretch}
+.gallery figure{border-radius:24px;overflow:hidden;position:relative;min-height:340px;background:var(--card)}
+.gallery img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.gallery figure.aisle{aspect-ratio:4/3;min-height:0}
+.gallery figcaption{position:absolute;left:14px;bottom:14px;background:rgba(11,7,22,.78);backdrop-filter:blur(6px);padding:8px 14px;border-radius:999px;font-size:13px;font-weight:700}
+.g-art{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:30px;background:conic-gradient(from 200deg,var(--pink),var(--orange),var(--yellow),var(--lime),var(--cyan),var(--violet),var(--pink))}
+.g-art .inner{background:var(--bg);border-radius:20px;padding:30px 24px;width:100%}
+.g-art h3{font-size:30px;margin-bottom:8px}
+
+/* VISIT */
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:22px}
+.info{background:linear-gradient(160deg,var(--violet),#5b21b6);border-radius:30px;padding:40px;display:flex;flex-direction:column;gap:22px}
+.info h2{font-size:clamp(32px,4vw,48px)}
+.info .row{display:flex;gap:14px;align-items:flex-start;font-weight:600}
+.info .row svg{flex:none;width:24px;height:24px;color:var(--lime);margin-top:2px}
+.info .row small{display:block;color:#e2d8ff;font-weight:400}
+.map{border-radius:30px;overflow:hidden;border:3px solid var(--cyan);min-height:420px;background:var(--card)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:saturate(1.2)}
+
+/* FOOTER */
+.age-bar{background:var(--red);color:#fff;text-align:center;font-weight:800;padding:14px 16px;font-size:14px;letter-spacing:.3px}
+footer{padding:46px 0 30px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer a:hover{color:var(--lime)}
+
+/* MOBILE CALL BAR */
+.callbar{display:none}
+
+@media (max-width:980px){
+  .navlinks{display:none}
+  .hero .wrap,.late .wrap,.visit,.k-grid{grid-template-columns:1fr}
+  .photo-stack{max-width:360px;margin-top:20px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .reviews{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery .g-art{grid-column:span 2;min-height:220px}
+}
+@media (max-width:600px){
+  section{padding:70px 0}
+  .hero{padding:44px 0 70px}
+  .nav-right .btn{display:none}
+  .grid{grid-template-columns:1fr 1fr;gap:12px}
+  .cat{min-height:180px;padding:20px 16px}
+  .cat h3{font-size:17px}
+  .cat svg{width:38px;height:38px;margin-bottom:18px}
+  .span2{grid-column:span 2}
+  .reviews{grid-template-columns:1fr}
+  .rev.wide{grid-column:auto}
+  .gallery{grid-template-columns:1fr}
+  .gallery .g-art{grid-column:auto}
+  .k-card{padding:28px;min-height:360px}
+  .k-card .art{width:190px;height:190px}
+  .tag.t1{left:-6px}.tag.t2{right:-6px}.tag.t3{left:4px}
+  .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:10px}
+  .callbar a{flex:1;justify-content:center}
+  footer{padding-bottom:100px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Lavi's Market home"><span class="l1">Lavi's</span><span class="l2">MARKET</span></a>
+    <div class="navlinks">
+      <a href="#shop">Shop</a><a href="#kitchen">Kitchen</a><a href="#hours">Hours</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a>
+    </div>
+    <div class="nav-right">
+      <span class="status" id="status"><i></i><span id="status-text">Checking hours…</span></span>
+      <a class="btn btn-lime" href="tel:+15166447006">Call</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">● 3347 Forbes Ave · Oakland, Pittsburgh</span>
+      <h1 class="display">If you need it,<br><span class="g">Lavi's has it.</span></h1>
+      <p class="lead">Cold beer, wine, hot individual pizzas, fresh subs, nicotine, hemp, snacks and late-night essentials. Steps from Pitt's campus and open until 4&nbsp;AM on weekends.</p>
+      <div class="ctas">
+        <a class="btn btn-lime" href="https://www.google.com/maps/dir/?api=1&destination=Lavi's+Market,+3347+Forbes+Ave,+Pittsburgh,+PA+15213" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Get directions</a>
+        <a class="btn btn-pink" href="https://www.doordash.com/convenience/store/lavi%27s-market-pittsburgh-49953869/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13l3 5v5h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M9 17h6"/></svg>Order delivery</a>
+        <a class="btn btn-ghost" href="#shop">See what's inside</a>
+      </div>
+      <div class="hero-stats">
+        <div><b><span class="stars">★</span> 4.6</b>Google rating</div>
+        <div><b>4 AM</b>Fri &amp; Sat close</div>
+        <div><b>7 days</b>Open from 7 AM</div>
+      </div>
+    </div>
+    <div class="photo-stack">
+      <div class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOQseeygxKrrD7XV6COlioHIvMrqFuA1F0e5cAfoXIMGl2YP0lgEC5jf4Vxeq3dvqaTge-w13GgGwSDumdfT7OZRAvDISLC_df2xVlhkBy7BeCSIN1-ejpgb8U4r25iU8fTaFCCis0HBWg=w800-k-no" alt="Lavi's Market storefront at night with its neon green and yellow sign on Forbes Ave" width="600" height="800" fetchpriority="high" onerror="this.remove()"></div>
+      <span class="tag t1">HOT PIZZA</span>
+      <span class="tag t2">COLD BEER</span>
+      <span class="tag t3">OPEN LATE</span>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Beer</span><span>Wine</span><span>Hot Pizza</span><span>Fresh Subs</span><span>Nicotine</span><span>Hemp</span><span>Snacks</span><span>Seltzers</span><span>Energy Drinks</span><span>Open 'til 4 AM</span>
+  <span>Beer</span><span>Wine</span><span>Hot Pizza</span><span>Fresh Subs</span><span>Nicotine</span><span>Hemp</span><span>Snacks</span><span>Seltzers</span><span>Energy Drinks</span><span>Open 'til 4 AM</span>
+</div></div>
+
+<section id="shop">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker" style="color:var(--pink)">The everything store</span><h2 class="display">What's inside</h2></div>
+      <p>One stop on Forbes for the pregame, the study session, the 2&nbsp;AM craving and everything in between.</p>
+    </div>
+    <div class="grid">
+      <div class="cat c-lime span2">
+        <span class="age">21+</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M12 14h18v26a4 4 0 0 1-4 4h-10a4 4 0 0 1-4-4z"/><path d="M30 20h4a4 4 0 0 1 4 4v6a4 4 0 0 1-4 4h-4"/><path d="M12 14c0-5 4-8 9-8s9 3 9 8"/><path d="M18 22v14M24 22v14"/></svg>
+        <h3>Beer &amp; Seltzers</h3>
+        <p>Ice-cold 6-packs, 12-packs and tall cans: Michelob Ultra, Modelo, Corona, Coors, Miller, Bud Light, White Claw, Twisted Tea and more.</p>
+      </div>
+      <div class="cat c-pink">
+        <span class="age">21+</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M16 6h16l-1 12a7 7 0 0 1-14 0z"/><path d="M24 25v15M17 42h14"/></svg>
+        <h3>Wine</h3><p>Reds, whites and bubbly for date night or the group chat.</p>
+      </div>
+      <div class="cat c-cyan">
+        <span class="age">21+</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M8 10h32L24 28z"/><path d="M24 28v12M16 42h16M30 4l-6 12"/></svg>
+        <h3>The Bar</h3><p>Grab a drink in-house. Ask the counter what's pouring tonight.</p>
+      </div>
+      <div class="cat c-orange">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M6 12c11-6 25-6 36 0L24 44z"/><circle cx="20" cy="20" r="2.5" fill="currentColor"/><circle cx="28" cy="27" r="2.5" fill="currentColor"/><circle cx="23" cy="33" r="2" fill="currentColor"/></svg>
+        <h3>Hot Individual Pizzas</h3><p>Fresh and hot, sized for one.</p>
+      </div>
+      <div class="cat c-mint">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M4 22c0-6 9-10 20-10s20 4 20 10z"/><path d="M4 28h40M6 34h36a2 2 0 0 1-2 4H8a2 2 0 0 1-2-4z"/><path d="M8 28c3 2 5-2 8 0s5-2 8 0 5-2 8 0 5-2 8 0"/></svg>
+        <h3>Fresh Subs</h3><p>Stacked sandwiches made to order.</p>
+      </div>
+      <div class="cat c-violet">
+        <span class="age">21+</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><rect x="16" y="10" width="16" height="32" rx="5"/><path d="M20 4h8v6h-8zM16 30h16"/></svg>
+        <h3>Nicotine &amp; Vapes</h3><p>Cigarettes, pouches and vapes, always stocked at fair prices.</p>
+      </div>
+      <div class="cat c-yellow">
+        <span class="age">21+</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M24 44V22M24 22c0-8-4-14-4-18 4 2 8 8 4 18zM24 24c-6-5-13-6-17-5 2 4 9 7 17 5zM24 24c6-5 13-6 17-5-2 4-9 7-17 5zM24 30c-5 0-10 3-12 6 4 1 9 0 12-6zM24 30c5 0 10 3 12 6-4 1-9 0-12-6z"/></svg>
+        <h3>Hemp &amp; THC</h3><p>A curated shelf of hemp-derived products. Ask the counter.</p>
+      </div>
+      <div class="cat c-red">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M12 8h24l-3 6 3 6-3 6 3 6-3 6 3 6H12l3-6-3-6 3-6-3-6 3-6z"/><path d="M19 22h10M19 28h10"/></svg>
+        <h3>Snacks &amp; Candy</h3><p>Chips, candy, cookies and every late-night craving.</p>
+      </div>
+      <div class="cat c-blue">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M16 4h16M18 4v6l-4 6v24a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V16l-4-6V4"/><path d="M27 22l-5 8h6l-5 8"/></svg>
+        <h3>Energy &amp; Drinks</h3><p>Energy drinks, soda, water and sports drinks.</p>
+      </div>
+      <div class="cat c-peach span2">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M6 14h36l-3 28H9z"/><path d="M16 14a8 8 0 0 1 16 0"/><path d="M18 24v10M30 24v10M24 24v10"/></svg>
+        <h3>Essentials &amp; Party Supplies</h3>
+        <p>Household basics, cups, ice, mixers and everything for the pregame. If you forgot it, they've got it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kitchen" id="kitchen">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker" style="color:var(--orange)">Hot food counter</span><h2 class="display">The kitchen</h2></div>
+      <p>Real food, made in the store. Grab a hot pizza or a fresh sub on the way home.</p>
+    </div>
+    <div class="k-grid">
+      <article class="k-card k-pizza">
+        <svg class="art" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="88" fill="#f6b04a"/><circle cx="100" cy="100" r="74" fill="#ffd166"/>
+          <circle cx="100" cy="100" r="74" fill="#ff7b2e" opacity=".35"/>
+          <g fill="#c1121f"><circle cx="70" cy="72" r="13"/><circle cx="128" cy="70" r="12"/><circle cx="100" cy="112" r="14"/><circle cx="62" cy="122" r="11"/><circle cx="138" cy="124" r="12"/><circle cx="104" cy="152" r="10"/></g>
+          <g fill="#2d6a4f"><circle cx="90" cy="84" r="4"/><circle cx="118" cy="98" r="4"/><circle cx="80" cy="140" r="4"/><circle cx="146" cy="96" r="4"/></g>
+          <path d="M100 100 L188 100 A88 88 0 0 1 162 162 Z" fill="#250b17" opacity=".2"/>
+        </svg>
+        <span class="chip">Made hot daily</span>
+        <h3 class="display">Hot individual pizzas</h3>
+        <p>Your own pie, hot and ready. The move after class, after the bar or at 2&nbsp;AM.</p>
+      </article>
+      <article class="k-card k-sub">
+        <svg class="art" viewBox="0 0 200 200" aria-hidden="true">
+          <g transform="rotate(-18 100 100)">
+            <rect x="20" y="70" width="170" height="34" rx="17" fill="#f4c27a"/>
+            <path d="M24 104 q12 10 24 0 q12 10 24 0 q12 10 24 0 q12 10 24 0 q12 10 24 0 q12 10 24 0 q12 10 22 0" fill="#7bd85a"/>
+            <rect x="24" y="104" width="162" height="10" fill="#e63946"/>
+            <rect x="24" y="114" width="162" height="10" fill="#ffd166"/>
+            <rect x="20" y="124" width="170" height="30" rx="14" fill="#e9a95a"/>
+            <g fill="#fff6" ><ellipse cx="60" cy="80" rx="8" ry="3"/><ellipse cx="110" cy="78" rx="8" ry="3"/><ellipse cx="155" cy="82" rx="8" ry="3"/></g>
+          </g>
+        </svg>
+        <span class="chip">Made to order</span>
+        <h3 class="display">Fresh subs</h3>
+        <p>Stacked high and built how you like it. Fuel for finals week and everything after.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="cold">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker" style="color:var(--cyan)">In the cooler</span><h2 class="display">Cold case picks</h2></div>
+      <p>A taste of what's chilling right now. Want it delivered? Lavi's is on DoorDash.</p>
+    </div>
+    <div class="cold">
+      <div class="item"><div><b>Modelo Especial</b><small>12 oz bottles · 12 pk</small></div><span class="pr">$24.99</span></div>
+      <div class="item"><div><b>White Claw Variety</b><small>12 oz cans · 12 pk</small></div><span class="pr">$24.99</span></div>
+      <div class="item"><div><b>Twisted Tea Variety</b><small>12 oz cans · 12 pk</small></div><span class="pr">$24.99</span></div>
+      <div class="item"><div><b>Michelob Ultra</b><small>12 oz slim cans · 12 pk</small></div><span class="pr">$21.99</span></div>
+      <div class="item"><div><b>Miller Lite</b><small>12 oz bottles · 12 pk</small></div><span class="pr">$19.99</span></div>
+      <div class="item"><div><b>Coors Light</b><small>12 oz cans · 12 pk</small></div><span class="pr">$18.99</span></div>
+      <div class="item"><div><b>Corona Extra</b><small>12 oz longnecks · 6 pk</small></div><span class="pr">$17.99</span></div>
+      <div class="item"><div><b>Southern Tier 2XIPA</b><small>12 oz cans · 12 pk</small></div><span class="pr">$29.99</span></div>
+      <div class="item"><div><b>Four Loko</b><small>23.5 oz can</small></div><span class="pr">$3.99</span></div>
+      <div class="item"><div><b>Mxd Cocktail Co. Margarita</b><small>16 oz can</small></div><span class="pr">$2.34</span></div>
+      <div class="item"><div><b>Verdi Strawberry Sparkletini</b><small>750 ml</small></div><span class="pr">$16.99</span></div>
+      <div class="item"><div><b>Pabst Blue Ribbon</b><small>12 oz cans · 12 pk</small></div><span class="pr">$14.99</span></div>
+    </div>
+    <p class="note">Prices shown are Lavi's Market DoorDash listings (Oct 2026). In-store prices and stock may vary. Must be 21+ with valid ID.</p>
+  </div>
+</section>
+
+<section class="late" id="hours">
+  <div class="wrap">
+    <div>
+      <span class="kicker" style="color:var(--lime)">Late-night hours</span>
+      <div class="display big-clock">4 AM</div>
+      <p style="color:var(--muted);font-size:18px;max-width:440px;margin-top:10px">Open every day from 7&nbsp;AM. Open until 2&nbsp;AM Sunday to Wednesday, 3&nbsp;AM Thursday and 4&nbsp;AM Friday and Saturday.</p>
+    </div>
+    <ul class="hours" id="hours-list">
+      <li data-d="1"><span>Monday</span><span>7 AM – 2 AM</span></li>
+      <li data-d="2"><span>Tuesday</span><span>7 AM – 2 AM</span></li>
+      <li data-d="3"><span>Wednesday</span><span>7 AM – 2 AM</span></li>
+      <li data-d="4"><span>Thursday</span><span>7 AM – 3 AM</span></li>
+      <li data-d="5" class="late-night"><span>Friday</span><span>7 AM – 4 AM</span></li>
+      <li data-d="6" class="late-night"><span>Saturday</span><span>7 AM – 4 AM</span></li>
+      <li data-d="0"><span>Sunday</span><span>7 AM – 2 AM</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><span class="kicker" style="color:var(--yellow)">What Oakland says</span><h2 class="display">Reviews</h2></div>
+      <div class="rating-hero"><span class="num">4.6</span><div><div class="stars" style="font-size:24px">★★★★★</div><div style="color:var(--muted);font-weight:600">from 21 Google reviews</div></div></div>
+    </div>
+    <div class="reviews">
+      <figure class="rev wide"><div class="stars">★★★★★</div><q>He's got alcohol, nicotine, food, is open late and is always great to talk to. If you're ever close to campus near CVS stop by cuz he's definitely got something for you.</q><figcaption class="who">Brian S. · Google review</figcaption></figure>
+      <figure class="rev"><div class="stars">★★★★★</div><q>Best market in town!</q><figcaption class="who">Serena C. · Google review</figcaption></figure>
+      <figure class="rev"><div class="stars">★★★★★</div><q>Great service and tons of selections.</q><figcaption class="who">Carson S. · Google review</figcaption></figure>
+      <figure class="rev"><div class="stars">★★★★★</div><q>Great store, good staff, and they have a lot of stuff.</q><figcaption class="who">Google review highlight</figcaption></figure>
+      <figure class="rev"><div class="stars">★★★★★</div><q>The smokes are always well stocked, and the prices are fair.</q><figcaption class="who">Google review highlight</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="gallery">
+      <figure><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TOQseeygxKrrD7XV6COlioHIvMrqFuA1F0e5cAfoXIMGl2YP0lgEC5jf4Vxeq3dvqaTge-w13GgGwSDumdfT7OZRAvDISLC_df2xVlhkBy7BeCSIN1-ejpgb8U4r25iU8fTaFCCis0HBWg=w700-k-no" alt="Lavi's Market neon storefront on Forbes Ave at night"><figcaption>The neon on Forbes</figcaption></figure>
+      <figure class="aisle"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QSTX0hi51736y1xGEZOr5d_mwRIzJkRfZRjpEB-R3FiPWwOmA-WAJ6I4A2RtDABs4j-5fz_Yc3xKkZbC8-OQTyrVriZnpgseOZGKeqTywQuhSy3rKU9-SgpBIVVmaWqnCW4OAWVfMaKhub=w1000-k-no" alt="Fully stocked snack aisles inside Lavi's Market"><figcaption>Aisles on aisles</figcaption></figure>
+      <figure class="g-art"><div class="inner"><h3 class="display">Steps from Pitt</h3><p style="color:var(--muted)">Forbes Oakland Building, right by CVS. Walk over between classes.</p></div></figure>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="padding-top:20px">
+  <div class="wrap visit">
+    <div class="info">
+      <h2 class="display">Come through</h2>
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div>3347 Forbes Ave, Pittsburgh, PA 15213<small>Forbes Oakland Building · near CVS</small></div></div>
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><div><a href="tel:+15166447006">(516) 644-7006</a><small>Call ahead for pizza and subs</small></div></div>
+      <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div>Daily from 7 AM<small>Until 2 AM Sun–Wed · 3 AM Thu · 4 AM Fri–Sat</small></div></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+        <a class="btn btn-lime" href="https://www.google.com/maps/dir/?api=1&destination=Lavi's+Market,+3347+Forbes+Ave,+Pittsburgh,+PA+15213" target="_blank" rel="noopener">Directions</a>
+        <a class="btn btn-pink" href="https://www.doordash.com/convenience/store/lavi%27s-market-pittsburgh-49953869/" target="_blank" rel="noopener">DoorDash</a>
+      </div>
+    </div>
+    <div class="map"><iframe title="Map to Lavi's Market" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Lavi's+Market,+3347+Forbes+Ave,+Pittsburgh,+PA+15213&z=17&output=embed"></iframe></div>
+  </div>
+</section>
+
+<div class="age-bar">21+ only for alcohol, tobacco, nicotine and hemp products. Valid ID required. Please drink responsibly.</div>
+<footer>
+  <div class="wrap">
+    <div><span class="logo" style="font-size:18px"><span class="l1">Lavi's</span>&nbsp;<span class="l2">MARKET</span></span><div style="margin-top:6px">© 2026 Lavi's Market · Oakland, Pittsburgh</div></div>
+    <div>Website by <a href="https://briansimon.dev" target="_blank" rel="noopener" style="color:var(--text);font-weight:700">Brian Simon</a></div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-lime" href="tel:+15166447006">Call</a>
+  <a class="btn btn-pink" href="https://www.google.com/maps/dir/?api=1&destination=Lavi's+Market,+3347+Forbes+Ave,+Pittsburgh,+PA+15213" target="_blank" rel="noopener">Directions</a>
+</div>
+
+<script>
+(function(){
+  // Hours in minutes from midnight; close past midnight is stored as >1440.
+  var H={0:[420,1560],1:[420,1560],2:[420,1560],3:[420,1560],4:[420,1620],5:[420,1680],6:[420,1680]};
+  var parts=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'short',hour:'numeric',minute:'numeric',hourCycle:'h23'}).formatToParts(new Date());
+  var g=function(t){return parts.find(function(p){return p.type===t}).value};
+  var day=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(g('weekday'));
+  var mins=(+g('hour'))*60+(+g('minute'));
+  var prev=(day+6)%7, open=false, closeAt=null;
+  if(mins<H[prev][1]-1440){open=true;closeAt=H[prev][1]-1440}
+  else if(mins>=H[day][0]){open=true;closeAt=H[day][1]%1440}
+  var fmt=function(m){var h=Math.floor(m/60),ap=h>=12?'PM':'AM';h=h%12||12;return h+' '+ap};
+  var el=document.getElementById('status'),tx=document.getElementById('status-text');
+  if(open){tx.textContent='Open now · til '+fmt(closeAt)}else{el.classList.add('closed');tx.textContent='Opens at 7 AM'}
+  // Before 7 AM the "business day" is still yesterday's
+  var bizDay=(mins<420)?prev:day;
+  var li=document.querySelector('#hours-list li[data-d="'+bizDay+'"]');
+  if(li)li.classList.add('today');
+})();
+</script>
+
+<!-- Added by briansimon.dev: concept disclosure -->
+<style>
+.bs-concept{position:fixed;left:12px;bottom:12px;z-index:2147483647;display:flex;align-items:center;gap:10px;flex-wrap:wrap;max-width:calc(100vw - 24px);padding:8px 12px;border-radius:999px;background:rgba(14,13,12,.92);color:#EDE6DA;font:500 13px/1.3 system-ui,-apple-system,"Segoe UI",sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.bs-concept a{color:#F2A541;text-decoration:none;font-weight:600;padding:4px 0}
+.bs-concept a:hover{text-decoration:underline}
+@media print{.bs-concept{display:none}}
+</style>
+<div class="bs-concept" role="note">Concept site by Brian Simon. Not the business's official website. <a href="/#concepts">&larr; Back to portfolio</a></div>
+<script>if (window.self !== window.top) document.querySelector(".bs-concept").remove();</script>
+</body>
+</html>

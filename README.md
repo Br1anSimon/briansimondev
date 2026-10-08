@@ -13,6 +13,7 @@ Static HTML, CSS, and JavaScript with a three.js scene. Hosted on GitHub Pages.
 ├── .nojekyll             # Serve files as-is (skip Jekyll)
 ├── robots.txt
 ├── sitemap.xml
+├── demos/              # Concept sites (noindex), one folder each
 └── assets/
     ├── css/
     │   ├── tokens.css    # Colors, fonts, type scale, spacing
@@ -53,3 +54,9 @@ python3 -m http.server 8000
 1. Add an `<article class="case">` in `index.html` with a `<a class="case-visual" id="anchor-N">`.
 2. Add an entry to `PROJECTS` in `assets/js/mockups.js` (same order as the anchors) with a `draw` function, or drop a screenshot at `assets/img/work/<slug>.jpg`.
 3. Add a hero position for it in `FAN` in `assets/js/stage.js`.
+
+## Adding a concept site
+
+1. Copy the site's `index.html` to `demos/<slug>/index.html`.
+2. Keep the "Concept site by Brian Simon" note and `noindex` meta tag at the top/bottom of the page.
+3. Add an `<article class="demo">` card in the `#concepts` section of `index.html`.

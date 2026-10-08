@@ -1,9 +1,10 @@
 /** Entry point. Loaded as a module from index.html. */
-import { initCopyEmail, initYear } from './ui.js';
+import { initCopyEmail, initYear, initDemoPreviews } from './ui.js';
 import { mountFlatFallback } from './mockups.js';
 
 initCopyEmail();
 initYear();
+initDemoPreviews();
 
 // The 3D stage pulls three.js from a CDN, so load it separately:
 // if the CDN, WebGL, or the GPU fails, the page still works with flat images.
