@@ -60,3 +60,9 @@ python3 -m http.server 8000
 1. Copy the site's `index.html` to `demos/<slug>/index.html`.
 2. Keep the "Concept site by Brian Simon" note and `noindex` meta tag at the top/bottom of the page.
 3. Add an `<article class="demo">` card in the `#concepts` section of `index.html`.
+
+## Cache busting
+
+GitHub Pages lets browsers cache CSS/JS, and some (Opera GX) hold on to old copies.
+After changing any file in `assets/css` or `assets/js`, change every `?v=2026-10-08` in `index.html`
+(the stylesheet links, the import map, and the `main.js` script tags) to today's date.

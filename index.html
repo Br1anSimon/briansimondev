@@ -17,20 +17,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
 
-  <link rel="stylesheet" href="assets/css/tokens.css">
-  <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/tokens.css?v=2026-10-08">
+  <link rel="stylesheet" href="assets/css/base.css?v=2026-10-08">
+  <link rel="stylesheet" href="assets/css/layout.css?v=2026-10-08">
 
   <script type="importmap">
     {
       "imports": {
         "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/",
+        "./assets/js/ui.js": "./assets/js/ui.js?v=2026-10-08",
+        "./assets/js/mockups.js": "./assets/js/mockups.js?v=2026-10-08",
+        "./assets/js/stage.js": "./assets/js/stage.js?v=2026-10-08"
       }
     }
   </script>
-  <link rel="modulepreload" href="assets/js/main.js">
-  <script type="module" src="assets/js/main.js"></script>
+  <link rel="modulepreload" href="assets/js/main.js?v=2026-10-08">
+  <!-- Bump ?v= on every CSS/JS change so browsers (Opera especially) drop cached copies. -->
+  <script type="module" src="assets/js/main.js?v=2026-10-08"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
